@@ -1,6 +1,4 @@
-import java.io.FileNotFoundException;
-import java.io.PrintWriter;
-import java.io.UnsupportedEncodingException;
+import java.io.*;
 
 /**
  * Created by Ted on 8/13/2016.
@@ -9,17 +7,28 @@ class schedulerMain {
 
     public static void main(String[] args){
         System.out.println("Hello World");
-        PrintWriter out = null;
+        /*File dir = new File("testOutput");
+        dir.mkdir();
+        File file = new File("testOutput","test.txt");
+        System.out.println("Absolute path: " + file.getAbsolutePath());
+
+        Shift testShift = new Shift(1);
+
         try {
-            out = new PrintWriter("testOutput.txt", "UTF-8");
-        } catch (FileNotFoundException e) {
+            String content = "This is a modified line!\nThis is the second line!";
+            if(!file.exists()) {
+                System.out.println("DOesn't exist.");
+                file.createNewFile();
+            }
+            FileWriter fw = new FileWriter((file.getAbsolutePath()));
+            BufferedWriter bw = new BufferedWriter(fw);
+            bw.write(content);
+            bw.close();
+
+            System.out.println("done");
+        } catch (IOException e) {
             e.printStackTrace();
-        } catch (UnsupportedEncodingException e) {
-            e.printStackTrace();
-        }
-        out.println("The first line");
-        out.println("The second line");
-        out.close();
+        }*/
 
     }
 }
