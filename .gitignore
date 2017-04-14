@@ -3,6 +3,8 @@ build/
 *.[oa]
 *~
 
+.idea/*
+
 # Compiled source #
 ###################
 *.com

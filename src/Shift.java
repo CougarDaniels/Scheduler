@@ -6,10 +6,12 @@ import java.time.DayOfWeek;
 public class Shift {
 
     private DayOfWeek day;
+    private Time time;
 
     public Shift(int value) {
         this.day = DayOfWeek.of(value);
         System.out.println(day.toString());
+
     }
 
 }

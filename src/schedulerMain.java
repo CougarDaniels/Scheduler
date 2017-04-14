@@ -3,6 +3,12 @@ import java.io.*;
 /**
  * Created by Ted on 8/13/2016.
  */
+
+/**
+ * Minimum viable product:
+ *  Match workers to shifts according to availability, ability, requests off
+ *  Export 7 days schedule to CSV or other easily read/printable format
+ */
 class schedulerMain {
 
     public static void main(String[] args){
